@@ -16,6 +16,7 @@ Python based, fast window switcher.
 - Extracts normal and floating windows from the json tree returned by swaymsg.
 - Wofi selection is done without appending the id of the window to the window name, providing a cleaner interface.
 - The JSON tree is parsed in python without jq, vastly improving the scripts performance, especially on laptops running in battery mode.
+- Window names prefixed with workspace number, stable sorting by workspace.
 
 ### SSH session launcher (ssh.py)
 
@@ -34,6 +35,9 @@ Python based, fast and very simple ssh launcher.
 - wofi
 
 ## Version History
+
+#### 0.3
+- Added bold workspace number prefix to window switcher.
 
 #### 0.2.1
 - Remove the requirement for `dmenu-print_line_num=true` config option for wofi
